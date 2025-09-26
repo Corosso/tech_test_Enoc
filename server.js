@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.static('.'));
 
 // Serve static files from the resources directory
+app.use(express.static(path.join(__dirname)));
 app.use('/resources', express.static(path.join(__dirname, 'resources')));
 
 // API routes
