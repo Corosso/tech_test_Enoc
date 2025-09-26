@@ -1,0 +1,19 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore logs
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore VSCode settings
+.vscode/
+
+*.cursor
+*.cursor.json
+.cursor/

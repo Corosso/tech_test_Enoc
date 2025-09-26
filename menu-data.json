@@ -1,0 +1,50 @@
+{
+  "menu_items": [
+    "Big Burger Combo",
+    "Double Cheeseburger",
+    "Cheeseburger", 
+    "Hamburger",
+    "Crispy Chicken Sandwich",
+    "Chicken Nuggets (6 pc)",
+    "Crispy Fish Sandwich",
+    "Fries",
+    "Baked Apple Pie",
+    "Manzana Postobon® Drink"
+  ],
+  "prices": {
+    "Big Burger Combo": 14.89,
+    "Double Cheeseburger": 5.79,
+    "Cheeseburger": 3.49,
+    "Hamburger": 2.99,
+    "Crispy Chicken Sandwich": 4.99,
+    "Chicken Nuggets (6 pc)": 4.49,
+    "Crispy Fish Sandwich": 5.29,
+    "Fries": 3.19,
+    "Baked Apple Pie": 1.79,
+    "Manzana Postobon® Drink": 1.49
+  },
+  "images": {
+    "Big Burger Combo": "resources/Menu/combo-postobon.png",
+    "Double Cheeseburger": "resources/Menu/Double_Cheeseburger.png",
+    "Cheeseburger": "resources/Menu/Cheeseburger.png",
+    "Hamburger": "resources/Menu/Hamburger.png",
+    "Crispy Chicken Sandwich": "resources/Menu/Crispy_Chicken_Sandwich.png",
+    "Chicken Nuggets (6 pc)": "resources/Menu/Chicken_Nuggets__6_pc.png",
+    "Crispy Fish Sandwich": "resources/Menu/Filet_Fish_Sandwich.png",
+    "Fries": "resources/Menu/Fries.png",
+    "Baked Apple Pie": "resources/Menu/Apple_Pie.png",
+    "Manzana Postobon® Drink": "resources/Menu/manzana-postobon-350-RET-1.png"
+  },
+  "descriptions": {
+    "Big Burger Combo": "Delicious burger combo with our signature sauce, served with crispy fries and refreshing Postobon drink",
+    "Double Cheeseburger": "Two juicy beef patties with melted cheese, lettuce, tomato, and special sauce",
+    "Cheeseburger": "Classic beef patty with melted cheese, fresh lettuce, tomato, and our special sauce",
+    "Hamburger": "Simple and delicious beef patty with fresh lettuce, tomato, and our signature sauce",
+    "Crispy Chicken Sandwich": "Crispy breaded chicken breast with fresh lettuce, tomato, and creamy mayo",
+    "Chicken Nuggets (6 pc)": "Six pieces of golden crispy chicken nuggets, perfect for sharing or as a snack",
+    "Crispy Fish Sandwich": "Crispy fish fillet with fresh lettuce, tomato, and tartar sauce on a soft bun",
+    "Fries": "Golden crispy french fries, seasoned to perfection and served hot",
+    "Baked Apple Pie": "Warm and flaky apple pie with cinnamon spices and tender apple filling",
+    "Manzana Postobon® Drink": "Refreshing apple-flavored Colombian soda, the perfect complement to any meal"
+  }
+}
