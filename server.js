@@ -262,14 +262,14 @@ app.post('/api/switch-agent/:agentType', async (req, res) => {
         return res.status(400).json({ error: 'Invalid agent type' });
     }
 
-    // For now, just return success with agent config
-    // The frontend will handle the actual agent switching via WebRTC
+    // Responder con 'config' como espera el frontend
     res.json({ 
       success: true, 
       agent_type: agentType,
-      agent_config: {
-        type: agentType,
-        ...agent
+      config: {
+        instructions: agent.instructions,
+        tools: agent.tools,
+        tool_choice: agent.tool_choice
       }
     });
     
@@ -335,3 +335,22 @@ process.on('SIGINT', () => {
 });
 
 module.exports = app;
+/*   _________        _________
+//  /  _______|      / _______ \
+//  |  |            | | x   x | |
+//  |  |            | |  x x  | |
+//  |  |            | |   +   | |
+//  |  |            | |   +   | |
+//  |  |            | |  x x  | |
+//  |  |_______     | |_x___x_| |
+//  \__________|     \_________/
+//   _________        _________
+//  |    __   \      / _______ \
+//  |   |  |   |    | | x   x | |
+//  |   |__|   |    | |  x x  | |
+//  |   __   __|    | |   +   | |
+//  |  |  \  \      | |   +   | |
+//  |  |   \  \     | |  x x  | |
+//  |  |    \  \    | |_x___x_| |
+//  |__|     \__\    \_________/
+*/
