@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 require('dotenv').config();
 
-// Import agent configurations
+// Agent configuration for OpenAI
 const { salesAgent, paymentAgent } = require('./agents-config');
 
 const app = express();
@@ -14,10 +14,10 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static('.'));
 
-// Serve static files from resources directory
+// Serve static files from the resources directory
 app.use('/resources', express.static(path.join(__dirname, 'resources')));
 
-// API Routes
+// API routes
 app.get('/api/menu-data', (req, res) => {
   try {
     const menuData = JSON.parse(fs.readFileSync('./menu-data.json', 'utf8'));
@@ -118,7 +118,7 @@ app.post('/api/session', async (req, res) => {
   }
 });
 
-// Frontend compatible session endpoint (same as /api/session but GET)
+// Frontend-compatible session endpoint
 app.get('/session', async (req, res) => {
   const { agentType = 'sales' } = req.query;
   
@@ -244,7 +244,7 @@ app.post('/api/switch-agent', async (req, res) => {
   }
 });
 
-// Frontend compatible agent switching endpoint
+// Frontend-compatible agent switching endpoint
 app.post('/api/switch-agent/:agentType', async (req, res) => {
   const { agentType } = req.params;
   const { sessionId } = req.body;
@@ -305,7 +305,7 @@ app.use((error, req, res, next) => {
   });
 });
 
-// Start server
+// Start the server
 const server = app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
   console.log(`📱 Restaurant AI Voice Chat ready!`);
